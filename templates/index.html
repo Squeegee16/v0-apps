@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Camp Event</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="snowfall"></div>
+    <header>
+        <h1>Winter Camp 2025</h1>
+    </header>
+
+    <section id="intro">
+        <h2>Welcome to Winter Camp 2025</h2>
+        <p>Join us for an unforgettable winter adventure in the heart of the mountains!</p>
+    </section>
+
+    <section id="photo-carousel">
+        <div class="carousel">
+            <img src="{{ url_for('static', filename='images/winter1.jpg') }}" alt="Winter scene 1">
+            <img src="{{ url_for('static', filename='images/winter2.jpg') }}" alt="Winter scene 2">
+            <img src="{{ url_for('static', filename='images/winter3.jpg') }}" alt="Winter scene 3">
+        </div>
+    </section>
+
+    <section id="registration">
+        <h2>Register Now</h2>
+        <p>Don't miss out on this amazing opportunity!</p>
+        <a href="https://forms.gle/your-google-form-link" class="button" target="_blank">Register Here</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact the Host</h2>
+        <p>For any inquiries, please contact:</p>
+        <p>Email: host@wintercamp.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
